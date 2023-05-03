@@ -1,0 +1,137 @@
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-04-20 20:20:00.719146"], ["updated_at", "2023-04-20 20:20:00.719146"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-04-24 10:49:13 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.9ms | Allocations: 532)
+Completed 200 OK in 36ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 4504)
+
+
+Started GET "/" for ::1 at 2023-04-24 16:12:10 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.0ms | Allocations: 235)
+Completed 200 OK in 12ms (Views: 9.6ms | Allocations: 913)
+
+
+Started GET "/" for ::1 at 2023-04-25 13:22:31 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 50)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 377)
+
+
+Started GET "/" for ::1 at 2023-04-27 10:03:53 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 49)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 370)
+
+
+Started GET "/" for ::1 at 2023-04-28 09:19:43 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 372)
+
+
+Started GET "/" for ::1 at 2023-05-01 09:44:46 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 49)
+Completed 200 OK in 2ms (Views: 1.3ms | Allocations: 372)
+
+
+Started GET "/" for ::1 at 2023-05-01 14:27:52 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 50)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 376)
+
+
+Started GET "/" for ::1 at 2023-05-01 15:29:43 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.2ms | Allocations: 357)
+Completed 200 OK in 29ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2767)
+
+
+Started GET "/" for ::1 at 2023-05-02 10:47:47 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.6ms | Allocations: 227)
+Completed 200 OK in 11ms (Views: 8.5ms | Allocations: 903)
+
+
+Started GET "/" for ::1 at 2023-05-02 14:03:06 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.9ms | Allocations: 232)
+Completed 200 OK in 7ms (Views: 5.6ms | Allocations: 909)
+
+
+Started GET "/" for ::1 at 2023-05-02 14:03:12 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 49)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 371)
+
+
+Started GET "/" for ::1 at 2023-05-02 14:03:13 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 50)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 374)
+
+
+Started GET "/" for ::1 at 2023-05-02 14:03:14 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/brandi.morton/.asdf/installs/ruby/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.1.7.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 49)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 370)
+
+
+Started GET "/" for ::1 at 2023-05-02 14:04:06 -0500
+Processing by CrudTestController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering crud_test/index.html.erb within layouts/application
+  Rendered crud_test/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 117)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/brandi.morton/Desktop/code/crudduds/public/packs
+[Webpacker] Hash: 804a8059a304061a3e74
+Version: webpack 4.46.0
+Time: 1222ms
+Built at: 05/02/2023 2:04:10 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-271cf8931bb708d2d8bb.js    121 KiB  application  [emitted] [immutable]  application
+js/application-271cf8931bb708d2d8bb.js.map    133 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-271cf8931bb708d2d8bb.js js/application-271cf8931bb708d2d8bb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 493 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3719.0ms | Allocations: 18433)
+Completed 200 OK in 3722ms (Views: 3720.7ms | Allocations: 19606)
+
+
